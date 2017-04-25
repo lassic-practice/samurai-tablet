@@ -543,6 +543,11 @@ get_header(); ?>
 				</div>
 				<div data-menu="surround" class="mainContent surroundContent js-surroundPage">
 					<div data-tab="1" class="contentWrapper">
+						<h3 class="contentHeadline" data-lang="ja">周辺案内</h3>
+						<h3 class="contentHeadline" data-lang="en">Surrounding Area</h3>
+						<h3 class="contentHeadline" data-lang="cn1">週邊嚮導</h3>
+						<h3 class="contentHeadline" data-lang="cn2">周边向导</h3>
+						<h3 class="contentHeadline" data-lang="ti">บริเวณโดยรอบ</h3>
 						<?php
 						$count = 0;
 						$hallPostArg = array(
@@ -608,6 +613,11 @@ get_header(); ?>
 						<?php $count++; wp_reset_postdata(); endforeach; endif;?>
 					</div>
 					<div data-tab="2" class="contentWrapper">
+						<h3 class="contentHeadline" data-lang="ja">周辺案内</h3>
+						<h3 class="contentHeadline" data-lang="en">Surrounding Area</h3>
+						<h3 class="contentHeadline" data-lang="cn1">週邊嚮導</h3>
+						<h3 class="contentHeadline" data-lang="cn2">周边向导</h3>
+						<h3 class="contentHeadline" data-lang="ti">บริเวณโดยรอบ</h3>
 						<?php
 						$count = 0;
 						$hallPostArg = array(
@@ -747,19 +757,39 @@ get_header(); ?>
 			<div class="subColumn">
 				<ul class="menuList js-menuList">
 					<li data-menu="intro" class="introductionGuide">
-						<a href="javascript:void(0)"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/menu_text_1.png"></a>
+						<a href="javascript:void(0)" data-lang="ja">はじめに</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="en">About</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn1">介紹</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn2">介绍</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="ti">บทนำ</a>
 					</li>
 					<li data-menu="hall" class="hallGuide">
-						<a href="javascript:void(0)"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/menu_text_2.png"></a>
+						<a href="javascript:void(0)" data-lang="ja">館内案内</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="en">Accommodations</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn1">館內嚮導 </a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn2">馆内向导 </a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="ti">ที่พัก</a>
 					</li>
 					<li data-menu="onsen" class="onsenGuide">
-						<a href="javascript:void(0)"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/menu_text_3.png"></a>
+						<a href="javascript:void(0)" data-lang="ja">温泉案内</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="en">Hot springs</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn1">溫泉嚮導</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn2">温泉向导</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="ti">น้ำพุร้อน</a>
 					</li>
 					<li data-menu="surround" class="surroundGuide">
-						<a href="javascript:void(0)"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/menu_text_4.png"></a>
+						<a href="javascript:void(0)" data-lang="ja">周辺案内</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="en">Surrounding Area</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn1">週邊嚮導</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn2">周边向导</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="ti">บริเวณโดยรอบ</a>
 					</li>
 					<li data-menu="menu" class="menuGuide">
-						<a href="javascript:void(0)"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/menu_text_5.png"></a>
+						<a href="javascript:void(0)" data-lang="ja">メニュー</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="en">Meals</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn1">料理</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="cn2">料理</a>
+						<a class="horizontal" href="javascript:void(0)" data-lang="ti">มื้ออาหาร</a>
 					</li>
 				</ul>
 			</div>

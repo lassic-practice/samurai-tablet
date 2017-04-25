@@ -2,7 +2,7 @@ body,
 html{
 	width: 100%;
 	height: 100%;
-	font-family: “Hannari”, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-family: "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .clearfix:after,
@@ -155,6 +155,7 @@ html{
 	font-size: 33px;
 	color: #6a4b31;
 	text-align: center;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .guideList{
@@ -200,6 +201,7 @@ html{
 	font-size: 21px;
 	color: #6a4b31;
 	margin-bottom: 15px;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .guideSentence{
@@ -256,6 +258,7 @@ html{
 	position: absolute;
 	top: 70px;
 	right: 50px;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .mainBuildingGuideLabel{
@@ -416,6 +419,7 @@ html{
 	position: absolute;
 	top: 150px;
 	right: 100px;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .annexGuideLabel{
@@ -821,6 +825,7 @@ html{
 .introSentence{
 	text-align: center;
 	color: #ffffff;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .introHeadline{
@@ -896,10 +901,35 @@ html{
 
 .menuList li a{
 	height: 100%;
+	width: 100%;
 	display: block;
 	background-color: rgba(0,0,0,0.7);
-	position: relative;
+	text-decoration: none;
+	writing-mode: vertical-rl;
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
 	transition: 1s;
+	line-height: 464px;
+	letter-spacing: 5px;
+	text-shadow:1px 1px 10px #000000,-1px -1px 10px #000000;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.menuList li .horizontal{
+	width: 100%;
+	line-height: 189px;
+	display: block;
+	writing-mode: horizontal-tb;
+	background-color: rgba(0,0,0,0.7);
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	transition: 1s;
+	letter-spacing: 5px;
+	text-shadow:1px 1px 10px #000000,-1px -1px 10px #000000;
+	font-family: Hannari, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .menuList .is-active a{
