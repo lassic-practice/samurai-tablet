@@ -1,0 +1,24 @@
+version: '2'
+services:
+  mysql:
+    build: ./mysql
+    container_name: "my_mysql"
+    environment:
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        MYSQL_DATABASE: ${MYSQL_DATABASE}
+        MYSQL_USER: ${MYSQL_USER}
+        MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - '3306:3306'
+    volumes:
+      - ${WORK_DIRPATH}/mysql/db:/db
+  php:
+    build: ./php
+    container_name: "my_php"
+    ports:
+      - '${PORT}:80'
+    volumes:
+      - ${WORK_DIRPATH}/DocumentRoot:/var/www/html
+      - ${WORK_DIRPATH}/apache2/vhosts:/etc/apache2/custom-enabled
+    links:
+      - mysql:mysql

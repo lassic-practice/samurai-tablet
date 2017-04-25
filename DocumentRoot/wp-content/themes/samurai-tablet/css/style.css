@@ -1,0 +1,998 @@
+body,
+html{
+	width: 100%;
+	height: 100%;
+	font-family: “Hannari”, "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.clearfix:after,
+.guideList li:after,
+.contentUnit:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*--module--*/
+
+.pl-290{
+	padding-left: 290px;
+}
+
+.pl-300{
+	padding-left: 300px;
+}
+
+.pl-340{
+	padding-left: 340px;
+}
+
+.pl-370{
+	padding-left: 370px;
+}
+
+.pl-520{
+	padding-left: 520px;
+}
+
+.pr-300{
+	padding-right: 300px;
+}
+
+.pr-370{
+	padding-right: 370px;
+}
+
+.pr-400{
+	padding-right: 400px;
+}
+
+.mt-10{
+	margin-top: 10px;
+}
+
+.mt-50{
+	margin-top: 80px;
+}
+
+.mt-80{
+	margin-top: 80px;
+}
+
+.mb-25{
+	margin-bottom: 25px;
+}
+
+.ml-20{
+	margin-left: 20px;
+}
+
+.color-red{
+	color: #bf0000;
+}
+
+
+
+
+.wrapper{
+	height: 100%;
+	box-sizing: border-box;
+	padding-bottom: 80px;
+}
+
+.main{
+	height: 100%;
+}
+
+.mainColumn{
+	width: 66%;
+	height: 100%;
+	float: left;
+	background: #333333;
+	overflow: hidden;
+	position: relative;
+}
+
+.mainContent{
+	height: 100%;
+	width: 100%;
+	background: url(../img/washi.png) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.mainContent.topContent{
+	background: url(../img/main.png) no-repeat;
+	background-size: cover;
+	background-position: top left;
+	display: block;
+    animation:bgmove 70s linear infinite;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: top left;
+    }
+
+    50% {
+        background-position: top right;
+    }
+
+    100% {
+        background-position: top left;
+    }
+}
+
+.mainContent.introContent{
+	background: url(../img/intro.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.textBox{
+	position: absolute;
+	top: 50%;
+	margin-top: -390px;
+	left: 50%;
+	margin-left: -420px;
+}
+
+/*コンテンツ部*/
+.contentWrapper{
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 20px 25px
+}
+
+.contentHeadline{
+	font-size: 33px;
+	color: #6a4b31;
+	text-align: center;
+}
+
+.guideList{
+	margin-top: 45px;
+}
+
+.guideList li{
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+	min-height: 140px;
+	margin-bottom: 25px;
+	vertical-align: top;
+	width: 50%;
+}
+
+.guideList .guide_emergency{
+	margin-top: -230px;
+}
+
+.guideList .guide_laundry{
+	margin-top: -65px;
+}
+
+.guideList .guide_laundry .guideSentence{
+	margin-right: -50px;
+}
+
+.guideList .guide_relaxation{
+	width: 100%;
+}
+
+.guideList li img{
+	float: left
+}
+
+.guideText{
+	padding-top: 5px;
+	padding-left: 145px;
+}
+
+.guideHeadline{
+	font-size: 21px;
+	color: #6a4b31;
+	margin-bottom: 15px;
+}
+
+.guideSentence{
+	font-size: 17px;
+	line-height: 32px;
+	font-feature-settings : "palt";
+}
+
+
+
+
+/*本館*/
+.mainBuildingWrapper{
+	height: 100%;
+	position: relative
+}
+
+.mainBuildingMap{
+	position: absolute;
+    width: 660px;
+    height: auto;
+    top: -20px;
+    left: 20px;
+}
+
+.mainBuildingImg_1{
+	position: absolute;
+    width: 135px;
+    height: auto;
+    top: 336px;
+    left: 530px;
+}
+
+.mainBuildingImg_2{
+	position: absolute;
+    width: 220px;
+    height: auto;
+    top: 0px;
+    left: 131px;
+}
+
+.mainBuildingImg_3{
+	position: absolute;
+    width: 140px;
+    height: auto;
+    top: 180px;
+    left: 40px;
+}
+
+.mainBuildingHeadline{
+	font-size: 45px;
+	line-height: 60px;
+	color: #6a4b31;
+	position: absolute;
+	top: 70px;
+	right: 50px;
+}
+
+.mainBuildingGuideLabel{
+	position: relative;
+}
+
+.mainBuildingGuideLabel div{
+	position: absolute;
+	font-size: 14px;
+	font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.mainBuildingGuideLabel .label_floor_1{
+	top: 527px;
+    left: 186px;
+}
+
+.mainBuildingGuideLabel .label_floor_2{
+	top: 480px;
+    left: 360px;
+}
+
+.mainBuildingGuideLabel .label_floor_3{
+	top: 283px;
+    left: 520px;
+}
+
+.mainBuildingGuideLabel .label_floor_4{
+	top: 474px;
+    left: 564px;
+}
+
+.mainBuildingGuideLabel .label_floor_5{
+	top: 693px;
+    left: 134px;
+    font-size: 16px;
+	font-weight: bold;
+}
+
+.mainBuildingGuideLabel .label_floor_6{
+	top: 655px;
+    left: 366px;
+    font-size: 16px;
+	font-weight: bold;
+}
+
+.mainBuildingGuideLabel .label_floor_7{
+	top: 686px;
+    left: 547px;
+    font-size: 16px;
+	font-weight: bold;
+}
+
+.mainBuildingGuideLabel .label_facility_1{
+	top: 127px;
+    left: 460px;
+}
+.mainBuildingGuideLabel .label_facility_2{
+	top: 205px;
+    left: 521px;
+}
+.mainBuildingGuideLabel .label_facility_3{
+	top: 291px;
+    left: 338px;
+}
+.mainBuildingGuideLabel .label_facility_4{
+	top: 527px;
+    left: 401px;
+}
+
+.mainBuildingGuideLabel .label_1f_1{
+	top: 820px;
+    left: 66px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_1f_2{
+	top: 760px;
+    left: 304px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_1f_3{
+	top: 790px;
+    left: 550px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_2f_1{
+	top: 789px;
+    left: 66px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_2f_2{
+	top: 789px;
+    left: 158px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_2f_3{
+	top: 731px;
+    left: 304px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_2f_4{
+	top: 762px;
+    left: 570px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_3f_1{
+	top: 760px;
+    left: 66px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_3f_2{
+	top: 760px;
+    left: 158px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_3f_3{
+	top: 701px;
+    left: 304px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mainBuildingGuideLabel .label_3f_4{
+	top: 732px;
+    left: 547px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
+/*別館*/
+.annexWrapper{
+	height: 100%;
+	position: relative
+}
+
+.annexMap{
+	position: absolute;
+	width: 600px;
+	height: auto;
+	top: 0px;
+	left: 15px;
+}
+
+.annexHeadline{
+	font-size: 45px;
+	line-height: 60px;
+	color: #6a4b31;
+	position: absolute;
+	top: 150px;
+	right: 100px;
+}
+
+.annexGuideLabel{
+	position: relative;
+}
+
+.annexGuideLabel div{
+	position: absolute;
+	font-size: 14px;
+	font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.annexGuideLabel .label_wc_1{
+	top: 440px;
+	left: 163px;
+}
+.annexGuideLabel .label_wc_2{
+	top: 395px;
+	left: 276px;
+}
+.annexGuideLabel .label_wc_3{
+	top: 353px;
+	left: 414px;
+}
+.annexGuideLabel .label_wc_4{
+	top: 528px;
+	left: 392px;
+}
+.annexGuideLabel .label_mwc_1{
+	top: 550px;
+	left: 585px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_fwc_1{
+	top: 555px;
+	left: 474px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_fwc_2{
+	top:717px;
+	left: 453px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_floor_1{
+	top: 320px;
+	left: 105px;
+}
+.annexGuideLabel .label_floor_2{
+	top: 290px;
+	left: 235px;
+}
+.annexGuideLabel .label_floor_3{
+	top: 170px;
+	left: 350px;
+}
+.annexGuideLabel .label_wfloor_1{
+	top: 800px;
+	left: 470px;
+}
+.annexGuideLabel .label_wfloor_2{
+	top: 635px;
+	left: 474px;
+}
+.annexGuideLabel .label_wfloor_3{
+	top: 485px;
+	left: 490px;
+}
+.annexGuideLabel .label_emergency_1{
+	top: 412px;
+	left: 306px;
+	height: 80px;
+	writing-mode: vertical-rl;
+}
+.annexGuideLabel .label_emergency_2{
+	top: 404px;
+	left: 368px;
+}
+.annexGuideLabel .label_emergency_3{
+	top: 535px;
+	left: 590px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_emergency_4{
+	top: 698px;
+	left: 570px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_emergency_5{
+	top: 770px;
+	left: 228px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_emergencyS_1{
+	top: 128px;
+	left: 190px;
+}
+.annexGuideLabel .label_emergencyS_2{
+	top: 90px;
+	left: 330px;
+}
+.annexGuideLabel .label_facility_1{
+	top: 59px;
+    left: 106px;
+	background: #defff8;
+}
+.annexGuideLabel .label_facility_2{
+	top: 105px;
+    left: 140px;
+	background: #defff8;
+}
+.annexGuideLabel .label_facility_3{
+	top: 20px;
+    left: 264px;
+	background: #defff8;
+}
+.annexGuideLabel .label_facility_4{
+	top: 65px;
+    left: 273px;
+	background: #defff8;
+}
+.annexGuideLabel .label_facility_5{
+	top: 400px;
+    left: 75px;
+}
+.annexGuideLabel .label_facility_6{
+	top: 523px;
+    left: 141px;
+}
+.annexGuideLabel .label_facility_7{
+	top: 431px;
+    left: 491px;
+}
+.annexGuideLabel .label_facility_8{
+	top: 577px;
+    left: 220px;
+}
+.annexGuideLabel .label_facility_9{
+	top: 723px;
+    left: 241px;
+}
+.annexGuideLabel .label_facility_10{
+	top: 807px;
+    left: 324px;
+}
+.annexGuideLabel .label_facility_11{
+	top: 773px;
+    left: 357px;
+}
+.annexGuideLabel .label_room_1{
+	top: 123px;
+    left: 282px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_room_2{
+	top: 180px;
+    left: 304px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_room_3{
+	top: 205px;
+    left: 303px;
+	font-size: 11px;
+}
+.annexGuideLabel .label_room_4{
+	top: 317px;
+    left: 311px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_5{
+	top: 340px;
+    left: 322px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_6{
+	top: 364px;
+    left: 326px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_7{
+	top: 390px;
+    left: 336px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_8{
+	top: 164px;
+    left: 145px;
+    font-size: 11px;
+}
+.annexGuideLabel .label_room_9{
+	top: 221px;
+    left: 162px;
+    font-size: 11px;
+}
+.annexGuideLabel .label_room_10{
+	top: 247px;
+    left: 167px;
+    font-size: 11px;
+}
+.annexGuideLabel .label_room_11{
+	top: 356px;
+    left: 178px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_12{
+	top: 381px;
+    left: 187px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_13{
+	top: 405px;
+    left: 197px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_14{
+	top: 431px;
+    left: 206px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_15{
+	top: 490px;
+    left: 257px;
+	font-size: 12px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_16{
+	top: 594px;
+    left: 297px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_17{
+	top: 593px;
+    left: 397px;
+	font-size: 10px;
+	background: #ffd3cb;
+}
+.annexGuideLabel .label_room_18{
+	top: 601px;
+    left: 438px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_19{
+	top: 601px;
+    left: 471px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_20{
+	top: 601px;
+    left: 510px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_21{
+	top: 597px;
+    left: 553px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_22{
+	top: 576px;
+    left: 581px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_23{
+	top: 764px;
+    left: 414px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_24{
+	top: 764px;
+    left: 449px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_25{
+	top: 764px;
+    left: 487px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_26{
+	top: 759px;
+    left: 530px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_room_27{
+	top: 740px;
+    left: 561px;
+	font-size: 10px;
+}
+.annexGuideLabel .label_to_1{
+	top: 615px;
+    left: 150px;
+}
+.annexGuideLabel .label_to_2{
+	top: 855px;
+    left: 188px;
+}
+
+
+
+
+/*汎用コンテンツ*/
+.contentUnit{
+	position: relative;
+	margin-top: 30px;
+}
+
+.contentUnit.leftImage img{
+	float: left
+}
+
+.contentUnit.rightImage img{
+	float: right;
+}
+
+.unitHeadline{
+	font-size: 22px;
+	color: #6a4b31;
+	margin-bottom: 25px;
+	line-height: 28px;
+}
+
+.unitHeadline.small{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.onsenSentence,
+.unitSentence{
+	font-size: 17px;
+	line-height: 32px;
+	font-feature-settings : "palt";
+}
+
+.unitSentence.small{
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.unitExplain{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.onsenSentence{
+	color: #6a4b31;
+}
+
+
+/*コンテンツ下部のメニュー*/
+.contentMenu{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	text-align: right;
+	font-size: 0;
+}
+
+.contentMenu li{
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.contentMenu li:first-child{
+	margin-left: 0;
+}
+
+.contentMenu li a{
+	font-size: 18px;
+	background: #6a4b31;
+	border-radius: 5px;
+	color: #ffffff;
+	position: relative;
+	padding: 0 15px;
+	text-decoration: none;
+	line-height: 30px;
+	display: block;
+	min-width: 90px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.contentMenu li a:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	width: 8px;
+	height: 8px;
+	border-right: solid 1px #ffffff;
+	border-bottom: solid 1px #ffffff;
+	transform: rotate(-45deg);
+}
+
+
+/*はじめに*/
+.introHeadline,
+.introSentence{
+	text-align: center;
+	color: #ffffff;
+}
+
+.introHeadline{
+	text-align: center;
+	font-size: 30px;
+	margin: 15px 0 35px;
+}
+
+.introSentence{
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.logoImg{
+	width: 354px;
+	height: 605px;
+	position: absolute;
+	top: 50%;
+	margin-top: -302px;
+	left: 50%;
+	margin-left: -177px;
+}
+
+
+/*サブカラム*/
+.subColumn{
+	width: 34%;
+	height: 100%;
+	float: left;
+	background: #444444;
+}
+
+.menuList{
+	height: 100%;
+	
+}
+
+.menuList li{
+	height: 20%;
+	border-top: solid 1px rgba(100,100,100,0.9);
+	box-sizing: border-box;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+}
+
+.menuList li:first-child{
+	border-top: none;
+}
+
+.menuList li.introductionGuide{
+	background-image: url(../img/menu_1.png);
+}
+
+.menuList li.hallGuide{
+	background-image: url(../img/menu_2.png);
+}
+
+.menuList li.onsenGuide{
+	background-image: url(../img/menu_3.png);
+}
+
+.menuList li.surroundGuide{
+	background-image: url(../img/menu_4.png);
+}
+
+.menuList li.menuGuide{
+	background-image: url(../img/menu_5.png);
+}
+
+.menuList li a{
+	height: 100%;
+	display: block;
+	background-color: rgba(0,0,0,0.7);
+	position: relative;
+	transition: 1s;
+}
+
+.menuList .is-active a{
+	background: none;
+	transition: 0.5s;
+}
+
+.menuList li a img{
+	position: absolute;
+	left: 50%;
+	margin-left: -40px;
+	top: 50%;
+	margin-top: -85px;
+	width: 80px;
+	height: auto;
+}
+
+/*footer*/
+.footer{
+	width: 100%;
+	height: 80px;
+	background: #170b0b;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: solid 1px #c0bdbb;
+}
+
+.languageUnit{
+	float: left;
+	margin-left: 25px;
+	margin-top: 27px;
+}
+
+.languageUnit li{
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+
+.languageUnit li.is-active{
+	background: #372b24;
+}
+
+.languageUnit li:before{
+	position: absolute;
+	content: "";
+	width: 1px;
+	border-left: solid 1px #ffffff;
+	height: 14px;
+	top: 7px;
+	left: -5px;
+}
+
+.languageUnit li:first-child{
+	margin-left: none;
+}
+
+.languageUnit li:first-child:before{
+	border: none;
+}
+
+.languageUnit li a{
+	padding: 0 8px;
+	font-size: 20px;
+	line-height: 27px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.btnUnit{
+	float: right;
+	width: 34%;
+}
+
+.btnUnit li{
+	float: left;
+	width: 33.33%;
+	height: 80px;
+
+}
+
+.btnUnit .is-active{
+	background: #372b24;
+}
+
+.btnUnit li a{
+	display: block;
+	height: 80px;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 80px;
+	font-size: 20px;
+}
