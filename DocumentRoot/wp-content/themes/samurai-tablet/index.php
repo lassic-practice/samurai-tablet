@@ -94,18 +94,22 @@ get_header(); ?>
 									<h4 class="guideHeadline" data-lang="cn1"><?php echo post_custom("title_cn1"); ?></h4>
 									<h4 class="guideHeadline" data-lang="cn2"><?php echo post_custom("title_cn2"); ?></h4>
 									<h4 class="guideHeadline" data-lang="ti"><?php echo post_custom("title_ti"); ?></h4>
-									<p class="guideSentence" data-lang="ja"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_ja", true ) ); ?></p>
-									<p class="guideSentence" data-lang="en"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_en", true ) ); ?></p>
-									<p class="guideSentence" data-lang="cn1"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_cn1", true ) ); ?></p>
-									<p class="guideSentence" data-lang="cn2"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_cn2", true ) ); ?></p>
-									<p class="guideSentence" data-lang="ti"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_ti", true ) ); ?></p>
+									<div class="guideSentence" data-lang="ja"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_ja", true ) ); ?></div>
+									<div class="guideSentence" data-lang="en"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_en", true ) ); ?></div>
+									<div class="guideSentence" data-lang="cn1"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_cn1", true ) ); ?></div>
+									<div class="guideSentence" data-lang="cn2"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_cn2", true ) ); ?></div>
+									<div class="guideSentence" data-lang="ti"><?php global $post; echo nl2br(get_post_meta( $post->ID, "contents_ti", true ) ); ?></div>
 								</div>
 							</li>
 							<?php wp_reset_postdata(); endforeach; endif;?>
 						</ul>
 					</div>
 					<div data-tab="2" class="contentWrapper">
-						<h3 class="contentHeadline">館内を楽しく快適にご利用いただくために</h3>
+						<h3 class="contentHeadline" data-lang="ja">館内を楽しく快適にご利用いただくために</h3>
+						<h3 class="contentHeadline" data-lang="en">How to use the facilities comfortably...</h3>
+						<h3 class="contentHeadline" data-lang="cn1">为了您可以愉快舒适的居住本旅馆</h3>
+						<h3 class="contentHeadline" data-lang="cn2">為了您可以愉快舒適的居住本旅館</h3>
+						<h3 class="contentHeadline" data-lang="ti">ข้อควรทราบ เพื่อให้ท่านสามารถใช้บริการของทางเราได้อย่างสบายใจ</h3>
 						<ul class="guideList clearfix">
 							<?php
 							$hallPostArg = array(
@@ -702,55 +706,138 @@ get_header(); ?>
 					<div data-tab="1" class="contentWrapper">
 						<h3 class="contentHeadline">料理</h3>
 						<div class="contentUnit leftImage">
-							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/surround_1.png" width="270">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/food_1.png" width="270">
 							<div class="pl-300">
-								<h4 class="unitHeadline">スギの大木と水神祠</h4>
-								<p class="unitSentence">まっすぐと天に伸びる威容は、見るものを圧倒する迫力です。<br>根本より清流が沸き出していることから、大樹左には水神様も<br>祀られております。<br>一條の歴史を物語る年代不明の神域ゾーンです。</p>
+								<h4 class="unitHeadline">時間を演出する会席料理晩餐は美の３拍子</h4>
+								<p class="unitSentence">美の回廊個室料亭匠庵（しょうあん）。美味・会席料理『森の晩餐』。<br>
+									そして美酒。この調和こそ湯主一條に多くのお客様がお越しになる理由。<br>
+									そして、泊まってよかったと評価していただける大きなポイントの一つです。<br>
+									食していただければお分かりいただけますが、この空間でのお食事は、<br>
+									まさに非日常。日常の喧騒を忘れさせ、大切な方との豊かな時間を<br>
+									お過ごしいただける特別なものなのです。</p>
 							</div>
 						</div>
 						<div class="contentUnit rightImage">
-							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/surround_2.png" width="270">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/food_2.png" width="270">
 							<div class="pr-300">
-								<h4 class="unitHeadline">いわくありの洞窟</h4>
-								<p class="unitSentence">およそ80年程前、当館に突然”働かせて欲しい”と訪れた男性が堅い岩盤を手掘りし、たったひとりで数年がかりで掘り上げた高さ2m、全長およそ15mの洞窟です。<br>第2号源泉として現在、館内の家族風呂および露天風呂に引かれております。</p>
-							</div>
-						</div>
-						<div class="contentUnit leftImage">
-							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/surround_3.png" width="270">
-							<div class="pl-300">
-								<h4 class="unitHeadline">市重要文化財のトチの大木</h4>
-								<p class="unitSentence">市の重要文化財にも指定されているトチの大木。傍らには渓流も流れ、春の新緑、夏の清涼、秋の紅葉、冬の山水画と、四季折々に風情ある景色を届けてくれます。<br>また、渓流はその瀬音から本館の下を通り抜けているようですが、その流れがどこに続いているのか分からない不思議な川です。</p>
+								<h4 class="unitHeadline">『美しくなければ料理じゃない!』</h4>
+								<p class="unitSentence">
+									料理長　佐藤秀夫　54歳。<br>
+									彼の調理人として過ごした時間に妥協という言葉はありません。<br>
+									会席料理『森の晩餐』は、まさに料理長　佐藤秀夫の料理への想いを<br>
+									表現した作品といえよう。<br>
+									『美しくなければ料理じゃない！』首尾一貫した彼のこのポリシーのもと<br>
+									年々リピーターを増やし続けるこの料理。見た目の美しさにとどまらず、<br>
+									口の中でも芳醇なハーモニーを奏でる数々のコースは湯主一條のお客様<br>
+									への想いも伝えてくれる。<br>
+									メインの焼き物および鍋物は肉か魚を選ぶことができます。<br>
+									料理がスタートしてからオーダーを受け付けますので、<br>
+									その時の気分でお選び下さい。
+								</p>
 							</div>
 						</div>
 					</div>
 					<div data-tab="2" class="contentWrapper">
 						<h3 class="contentHeadline">飲み物</h3>
 						<div class="contentUnit leftImage">
-							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/surround_4.png" width="270">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/food_3.png" width="270">
 							<div class="pl-300">
-								<h4 class="unitHeadline">国の登録有形文化財に指定されている　一條の蔵</h4>
-								<p class="unitSentence">当館ゆかりの文化墨客の書や絵画、古文書および代々伝わる所蔵の古書や美術品等を保存。蔵そのものも一條家の宝です。</p>
+								<h4 class="unitHeadline">時間を演出する会席料理晩餐は美の３拍子</h4>
+								<p class="unitSentence">
+									湯主一條の考える晩餐とは時間。時間を演出するのが私たち旅館の<br>
+									使命であり、湯主一條のもっとも大切にしている事です。<br>
+									そして特別な空間で晩餐を演出するのはワイン。<br>
+									大切な記念日、特別な休日、友人との語らい、ワインはそういったシーンを<br>
+									うまく演出してくれる。クリスマスにシャンパンが抜群に合うのは、<br>
+									グラスに注がれたきめ細かな泡が立ち上り芳醇な香りに包み込まれることで、<br>
+									華やかな気分になり素敵な時間を演出してくれる。<br>
+									ワインを通じて、湯主一條での豊かな滞在時間“時”をお楽しみ下さい。
+								</p>
 							</div>
 						</div>
-						<div class="contentUnit rightImage">
-							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/surround_5.png" width="270">
-							<div class="pr-300">
-								<h4 class="unitHeadline">宮大工による建造　湯神神社</h4>
-								<p class="unitSentence">別館の裏手にあります湯神神社は、本館同様、宮大工によって建てられた由緒正しいお社です。<br>鎌先の湯が傷の湯ということから、以前はお客様のお礼参りによる松葉杖やギブス等が奉納されておりました。<br>現在は神社の保存のため、奉納をお断りいたしております。<br>5月には神社のお祭りがあります。</p>
-							</div>
-						</div>
-						<div class="contentUnit leftImage">
-							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/surround_6.png" width="270">
-							<div class="pl-300">
-								<h4 class="unitHeadline">天狗の小径</h4>
-								<p class="unitSentence">裏山へと続く小径「天狗の相撲場」。<br>全長およ300m、ゆったり歩いて所要時間40分程度。<br>孟宗竹の竹やぶでは春先、愛らしいタケノコも顔を出し、お膳にも登場します。夏のカブト虫、秋の紅葉と季節折々の山の恵の他、種類豊富は山野草にも出会えます。</p>
-								<p class="unitExplain mt-10">※一部足元が悪くなっておりますのでご注意のうえ、あらかじめ歩きやすいお履物にて<br>お出かけください。</p>
-							</div>
+						<div class="lunchList clearfix">
+							<ul>
+								<li>
+									<h4 class="unitHeadline">ランチメニュー（11:00〜12:30）</h4>
+									<p class="unitSentence">
+										クロワッサン　サラダ　コーヒー　1,080円<br>
+										おくずかけ温麺　1,080円<br>
+										冷やし温麺（夏季限定）　1,080円<br>
+										おにぎり（鮭・梅・昆布）　１ケ　200円
+									</p>
+								</li>
+								<li>
+									<h4 class="unitHeadline">お夜食（22:30迄）</h4>
+									<p class="unitSentence">
+										お茶漬け　540円<br>
+										ご当地限定カップ麺　仙台屋台醤油ラーメン　540円
+									</p>
+								</li>
+								<li>
+									<h4 class="unitHeadline">その他（22:30迄）</h4>
+									<p class="unitSentence">
+										アイスクリーム　540円<br>
+										氷（飲食用） 540円<br>
+										乾き物　2,700円<br>
+										お新香盛り合わせ　2,700円
+									</p>
+								</li>
+							</ul>
 						</div>
 					</div>
+					<div data-tab="3" class="contentWrapper">
+						<h3 class="contentHeadline">宮城の地酒</h3>
+						<ul class="drinkList">
+							<li>
+								<h4 class="unitHeadline">勝山<br>
+									純米大吟醸　暁［勝山酒造］720ml　¥14,040<br>
+									アルコール度数 16%　精米歩合 35%　日本酒度 ±0</h4>
+								<p class="unitSentence">
+									伊達家御用蔵<br>
+									日本最高の純度を誇る「遠心しぼり」により酒と酒粕を分離し、空気に触れず低音で高純度のエッセンスを抽出する手法で譲した、<br>
+									今までのあらゆる日本酒の概念を超える次世代のお酒です。高純度の甘味と旨味、綺麗な発酵による酸味と吟醸の香織、<br>
+									全てが高次元で一体化したまとまりをお楽しみいただけます。</p>
+							</li>
+							<li>
+								<h4 class="unitHeadline">勝山<br>
+									純米吟醸　サファイアラベル［勝山酒造］720ml　¥6,480<br>
+									アルコール度数 12%　精米歩合 55%　日本酒度 -4.2</h4>
+								<p class="unitSentence">
+									アルコール度数　12%　精米歩合　55%　日本酒度　-4.2<br>
+									マスクメロンの様な上品な香りと甘くふくよかな米の旨味うぃ表現した低アルコール酒。<br>
+									透明感あふれる大人の甘さを感じられる味わい。</p>
+							</li>
+							<li>
+								<h4 class="unitHeadline">綿屋<br>
+									純米大吟醸　暁［金の井酒造］720ml　¥6,480　 グラス ¥1,080<br>
+									アルコール度数 16.5%　精米歩合 45%　日本酒度 +4</h4>
+								<p class="unitSentence">
+									美しい酒室ながらも米の旨味をしっかちと感じさせてくれる純米大吟醸です。<br>
+									味吟醸と香吟醸の中間にあたりに位置する絶妙のバランスをもった食中向けの大吟醸として最高峰の逸品です。</p>
+							</li>
+							<li>
+								<h4 class="unitHeadline">綿屋<br>
+									純米大吟醸　昇り龍［蔵王酒造］ 720ml　¥6,480　グラス ¥1,080<br>
+									アルコール度数 16.5%　精米歩合 50%　日本酒度 +3</h4>
+								<p class="unitSentence">
+									香りは控えめながら、キレのある飲みごたえがあり、満足感を味わえるお酒です。これは絶対「冷や」で！<br>
+									ラベルの「昇り龍」は江戸時代後期の画家で、仙台藩伊達家の御用絵師を勤めた菊田伊洲のもの。</p>
+							</li>
+							<li>
+								<h4 class="unitHeadline">阿部勘<br>
+									純米吟醸　亀の尾［阿部勘酒造店］720ml　¥5,400　グラス ¥810<br>
+									アルコール度数 15%　精米歩合 55%　日本酒度 +4</h4>
+								<p class="unitSentence">
+									幻の酒米「亀の尾」は偶発的な異変でできたお米で、結実不良の稲の中で倒れずに結実の良い３本の稲穂から栽培されました。<br>
+									コクがあり、味わい深い落ち着きを見せるお酒です。<br>
+									さまざまな料理に良くあいますのでぜひ食中酒としてお楽しみください。</p>
+							</li>
+						</ul>
+					</div>
 					<ul class="contentMenu clearfix">
-						<li><a data-tab="1" href="javascript:void(0)">料理</a></li>
-						<li><a data-tab="2" href="javascript:void(0)">飲み物</a></li>
+						<li><a data-tab="1" href="javascript:void(0)">料理1</a></li>
+						<li><a data-tab="2" href="javascript:void(0)">料理2</a></li>
+						<li><a data-tab="3" href="javascript:void(0)">飲み物</a></li>
 					</ul>
 				</div>
 			</div>

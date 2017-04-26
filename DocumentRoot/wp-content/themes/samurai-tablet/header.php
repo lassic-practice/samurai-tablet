@@ -34,9 +34,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <script>
 	if (window.navigator.standalone) {
-		location.href="http://samurai-tablet.com/";
+	//	location.href="http://samurai-tablet.com/";
 	} else {
-		document.write("このページをホームに追加してください");
+		//document.write("このページをホームに追加してください");
 	}
 	</script>
 <?php wp_head(); ?>

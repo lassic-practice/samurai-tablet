@@ -159,7 +159,7 @@ html{
 }
 
 .guideList{
-	margin-top: 45px;
+	margin-top: 20px;
 }
 
 .guideList li{
@@ -210,8 +210,22 @@ html{
 	font-feature-settings : "palt";
 }
 
+.guideSentence[data-lang="en"]{
+	font-size: 17px;
+	line-height: 20px;
+	font-feature-settings: "palt";
+	min-height: 120px;
+}
 
+.guideSentence[data-lang="ti"]{
+	font-size: 15px!important;
+	line-height: 32px;
+	font-feature-settings : "palt";
+}
 
+.outgoing {
+	min-height:  380px!important;
+}
 
 /*本館*/
 .mainBuildingWrapper{
@@ -723,8 +737,49 @@ html{
     left: 188px;
 }
 
+/*メニュー*/
+.lunchList{
+	margin-top: 40px;
+}
 
 
+.lunchList li{
+	float: left;
+	width: 50%;
+	height: 200px;
+}
+
+.lunchList li .unitHeadline{
+	margin-bottom: 10px;
+}
+
+.drinkList{
+	background: url(../img/drink.png) no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.drinkList li{
+	border-top: solid 1px #b1a092;
+	padding: 10px 0;
+}
+
+.drinkList li:first-child{
+	border-top: none;
+}
+
+.drinkList .unitHeadline{
+	font-size: 17px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	text-shadow:1px 1px 10px #ffffff,-1px -1px 10px #ffffff;
+}
+
+.drinkList .unitSentence{
+	font-size: 15px;
+	line-height: 20px;
+	text-shadow:1px 1px 10px #ffffff,-1px -1px 10px #ffffff;
+}
 
 /*汎用コンテンツ*/
 .contentUnit{
@@ -861,7 +916,7 @@ html{
 
 .menuList{
 	height: 100%;
-	
+
 }
 
 .menuList li{
