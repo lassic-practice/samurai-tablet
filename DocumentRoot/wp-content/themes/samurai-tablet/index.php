@@ -56,7 +56,7 @@ get_header(); ?>
 						<h3 class="contentHeadline" data-lang="en">How to use the facilities comfortably...</h3>
 						<h3 class="contentHeadline" data-lang="cn1">为了您可以愉快舒适的居住本旅馆</h3>
 						<h3 class="contentHeadline" data-lang="cn2">為了您可以愉快舒適的居住本旅館</h3>
-						<h3 class="contentHeadline" data-lang="ti">ข้อควรทราบ เพื่อให้ท่านสามารถใช้บริการของทางเราได้อย่างสบายใจ</h3>
+						<h3 class="contentHeadline lang-thai" data-lang="ti">ข้อควรทราบ เพื่อให้ท่านสามารถใช้บริการของทางเราได้อย่างสบายใจ</h3>
 						<ul class="guideList clearfix">
 							<?php
 							$hallPostArg = array(
@@ -109,7 +109,7 @@ get_header(); ?>
 						<h3 class="contentHeadline" data-lang="en">How to use the facilities comfortably...</h3>
 						<h3 class="contentHeadline" data-lang="cn1">为了您可以愉快舒适的居住本旅馆</h3>
 						<h3 class="contentHeadline" data-lang="cn2">為了您可以愉快舒適的居住本旅館</h3>
-						<h3 class="contentHeadline" data-lang="ti">ข้อควรทราบ เพื่อให้ท่านสามารถใช้บริการของทางเราได้อย่างสบายใจ</h3>
+						<h3 class="contentHeadline lang-thai" data-lang="ti">ข้อควรทราบ เพื่อให้ท่านสามารถใช้บริการของทางเราได้อย่างสบายใจ</h3>
 						<ul class="guideList clearfix">
 							<?php
 							$hallPostArg = array(
