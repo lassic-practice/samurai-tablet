@@ -215,15 +215,14 @@ html{
 }
 
 .guideSentence[data-lang="en"]{
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 20px;
 	font-feature-settings: "palt";
-	min-height: 120px;
 }
 
 .guideSentence[data-lang="ti"]{
 	font-size: 15px!important;
-	line-height: 32px;
+	line-height: 25px;
 	font-feature-settings : "palt";
 }
 
