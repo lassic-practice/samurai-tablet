@@ -166,14 +166,14 @@ html{
 	margin-top: 45px;
 }
 
-.guideList li{
-	position: relative;
-	float: left;
-	box-sizing: border-box;
-	min-height: 140px;
-	margin-bottom: 25px;
-	vertical-align: top;
-	width: 50%;
+.guideList li {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  min-height: 140px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  width: 50%;
 }
 
 .guideList .guide_emergency{
@@ -209,13 +209,13 @@ html{
 }
 
 .guideSentence{
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 32px;
 	font-feature-settings : "palt";
 }
 
 .guideSentence[data-lang="en"]{
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 20px;
 	font-feature-settings: "palt";
 	min-height: 120px;
